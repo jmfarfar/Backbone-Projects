@@ -48,13 +48,11 @@
 			<a href="#/completed"> Completed </a>
 		</li>
 	</ul>
-	<% if completed { %>
+	<% if (completed) { %>
 		<button id="clear-completed"> Clear completed (<%= completed %>) </button>
 	<% } %>
 </script>
 
-<script type="text/template" id="item-template"></script>
-<script type="text/template" id="stats-template"></script>
 <script src="js/lib/jquery.js"></script>
 <script src="js/lib/underscore.js"></script>
 <script src="js/lib/backbone.js"></script>
